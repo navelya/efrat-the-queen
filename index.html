@@ -65,22 +65,13 @@
 
     input:focus, textarea:focus {
       outline: none;
-      border-color: #8B5CF6;
-      box-shadow: 0 0 0 3px #8B5CF633;
+      border-color: #171717;
+      box-shadow: 0 0 0 2px #171717;
     }
 
     img {
       max-width: 100%;
       height: auto;
-    }
-
-    .card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     }
 
     .container {
@@ -166,44 +157,50 @@
     <div class="container mx-auto px-6 relative z-10">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-5xl font-bold mb-4">אפרת חיים שלי 5</h2>
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">אפרת חיים שלי 6</h2>
           <p class="text-lg md:text-xl opacity-80">Powerful features designed to help you work smarter, not harder</p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-      <div class="card text-center p-6 bg-white rounded-lg shadow-lg border-2">
-        <div class="mb-4 flex justify-center">
-          <div class="rounded-full p-4" style="background-color: #6366F120;">
-            <svg class="w-8 h-8" style="color: #6366F1;" fill="currentColor" viewBox="0 0 256 256">
-              <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
-            </svg>
+      <div class="text-center bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm h-full">
+        <div class="px-6 pt-8 pb-6">
+          <div class="mb-4 flex justify-center">
+            <div class="rounded-full p-4" style="background-color: #6366F120;">
+              <svg class="w-8 h-8" style="color: #6366F1;" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
+              </svg>
+            </div>
           </div>
+          <h3 class="text-xl font-semibold mb-2">מהיר כמו אפרת</h3>
+          <p class="text-gray-600">Built for speed with cutting-edge technology that keeps you moving</p>
         </div>
-        <h3 class="text-xl font-semibold mb-2">מהיר כמו אפרת</h3>
-        <p class="text-gray-600">Built for speed with cutting-edge technology that keeps you moving</p>
       </div>
     
-      <div class="card text-center p-6 bg-white rounded-lg shadow-lg border-2">
-        <div class="mb-4 flex justify-center">
-          <div class="rounded-full p-4" style="background-color: #6366F120;">
-            <svg class="w-8 h-8" style="color: #6366F1;" fill="currentColor" viewBox="0 0 256 256">
-              <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
-            </svg>
+      <div class="text-center bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm h-full">
+        <div class="px-6 pt-8 pb-6">
+          <div class="mb-4 flex justify-center">
+            <div class="rounded-full p-4" style="background-color: #6366F120;">
+              <svg class="w-8 h-8" style="color: #6366F1;" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
+              </svg>
+            </div>
           </div>
+          <h3 class="text-xl font-semibold mb-2">Secure &amp; Reliable</h3>
+          <p class="text-gray-600">Enterprise-grade security to keep your data safe and protected</p>
         </div>
-        <h3 class="text-xl font-semibold mb-2">Secure &amp; Reliable</h3>
-        <p class="text-gray-600">Enterprise-grade security to keep your data safe and protected</p>
       </div>
     
-      <div class="card text-center p-6 bg-white rounded-lg shadow-lg border-2">
-        <div class="mb-4 flex justify-center">
-          <div class="rounded-full p-4" style="background-color: #6366F120;">
-            <svg class="w-8 h-8" style="color: #6366F1;" fill="currentColor" viewBox="0 0 256 256">
-              <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
-            </svg>
+      <div class="text-center bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm h-full">
+        <div class="px-6 pt-8 pb-6">
+          <div class="mb-4 flex justify-center">
+            <div class="rounded-full p-4" style="background-color: #6366F120;">
+              <svg class="w-8 h-8" style="color: #6366F1;" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
+              </svg>
+            </div>
           </div>
+          <h3 class="text-xl font-semibold mb-2">Easy Integration</h3>
+          <p class="text-gray-600">Connect with all your favorite tools and services seamlessly</p>
         </div>
-        <h3 class="text-xl font-semibold mb-2">Easy Integration</h3>
-        <p class="text-gray-600">Connect with all your favorite tools and services seamlessly</p>
       </div>
     </div>
       </div>
@@ -215,8 +212,9 @@
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl md:text-5xl font-bold text-center mb-12">Loved by Thousands</h2>
         <div class="grid md:grid-cols-2 gap-8">
-        <div class="card bg-white p-6 rounded-lg shadow-lg border-2">
-          <div class="flex gap-1 mb-4">
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm">
+          <div class="px-6 pt-6">
+            <div class="flex gap-1 mb-4">
         <svg class="w-5 h-5" style="color: #8B5CF6; fill: currentColor;" viewBox="0 0 256 256">
           <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
         </svg>
@@ -237,15 +235,17 @@
           <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
         </svg>
       </div>
-          <p class="text-lg mb-4 italic">"This platform completely transformed how we work. Our productivity increased by 40% in the first month!"</p>
-          <div>
-            <p class="font-semibold">Sarah Johnson</p>
-            <p class="text-sm text-gray-600">CEO, TechStart</p>
+            <p class="text-lg mb-4 italic">"This platform completely transformed how we work. Our productivity increased by 40% in the first month!"</p>
+            <div>
+              <p class="font-semibold">Sarah Johnson</p>
+              <p class="text-sm text-gray-600">CEO, TechStart</p>
+            </div>
           </div>
         </div>
       
-        <div class="card bg-white p-6 rounded-lg shadow-lg border-2">
-          <div class="flex gap-1 mb-4">
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm">
+          <div class="px-6 pt-6">
+            <div class="flex gap-1 mb-4">
         <svg class="w-5 h-5" style="color: #8B5CF6; fill: currentColor;" viewBox="0 0 256 256">
           <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
         </svg>
@@ -266,10 +266,11 @@
           <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
         </svg>
       </div>
-          <p class="text-lg mb-4 italic">"The best investment we made this year. Intuitive, powerful, and our team adopted it instantly."</p>
-          <div>
-            <p class="font-semibold">Michael Chen</p>
-            <p class="text-sm text-gray-600">Product Manager, InnovateCo</p>
+            <p class="text-lg mb-4 italic">"The best investment we made this year. Intuitive, powerful, and our team adopted it instantly."</p>
+            <div>
+              <p class="font-semibold">Michael Chen</p>
+              <p class="text-sm text-gray-600">Product Manager, InnovateCo</p>
+            </div>
           </div>
         </div>
       </div>
@@ -294,28 +295,33 @@
           <h2 class="text-3xl md:text-5xl font-bold mb-4">Start Your Journey</h2>
           <p class="text-lg opacity-80">Fill out the form below and we&#039;ll get you started right away</p>
         </div>
-        <div class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl border-2">
-          <form id="lead-form">
-        <div class="mb-4">
-          <label class="block text-base font-medium mb-2" for="name">Full Name <span class="text-red-500">*</span></label>
-          <input type="text" id="name" name="name" placeholder="John Doe" required class="w-full px-4 py-3 text-base border-2 rounded-lg h-12">
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-2xl py-6">
+          <div class="px-6 pt-2 pb-2">
+            <form id="lead-form" class="space-y-6">
+              
+        <div class="space-y-2">
+          <label class="text-base font-medium leading-none" for="name">Full Name <span class="text-red-500">*</span></label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required class="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg h-12 bg-white focus:outline-none focus:border-gray-900 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2">
         </div>
       
-        <div class="mb-4">
-          <label class="block text-base font-medium mb-2" for="email">Email Address <span class="text-red-500">*</span></label>
-          <input type="email" id="email" name="email" placeholder="john@example.com" required class="w-full px-4 py-3 text-base border-2 rounded-lg h-12">
+        <div class="space-y-2">
+          <label class="text-base font-medium leading-none" for="email">Email Address <span class="text-red-500">*</span></label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required class="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg h-12 bg-white focus:outline-none focus:border-gray-900 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2">
         </div>
       
-        <div class="mb-4">
-          <label class="block text-base font-medium mb-2" for="phone">Phone Number</label>
-          <input type="phone" id="phone" name="phone" placeholder="+1 (555) 000-0000"  class="w-full px-4 py-3 text-base border-2 rounded-lg h-12">
+        <div class="space-y-2">
+          <label class="text-base font-medium leading-none" for="phone">Phone Number</label>
+          <input type="phone" id="phone" name="phone" placeholder="+1 (555) 000-0000"  class="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg h-12 bg-white focus:outline-none focus:border-gray-900 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2">
         </div>
       
-          <div class="mb-4">
-            <label class="block text-base font-medium mb-2" for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us more about your needs..."  rows="4" class="w-full px-4 py-3 text-base border-2 rounded-lg"></textarea>
+          <div class="space-y-2">
+            <label class="text-base font-medium leading-none" for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us more about your needs..."  rows="4" class="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg bg-white focus:outline-none focus:border-gray-900 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"></textarea>
           </div>
-        <button type="submit" class="w-full py-4 text-lg font-semibold rounded-lg transition-all" style="background-color: #8B5CF6; color: white;">Start Free Trial</button></form>
+        
+              <button type="submit" class="w-full h-14 text-lg font-semibold rounded-lg transition-all hover:opacity-90" style="background-color: #8B5CF6; color: white;">Start Free Trial</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -329,13 +335,16 @@
           <p class="text-lg md:text-xl opacity-80">Choose the plan that works for you</p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-        <div class="card bg-white p-6 rounded-lg shadow-lg border-2 " style="">
-          <h3 class="text-2xl font-bold mb-4">Starter</h3>
-          <div class="mb-4">
-            <span class="text-4xl font-bold">$29</span>
-            <span class="text-gray-600">/ per month</span>
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 shadow-sm h-full border-gray-200" style="">
+          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+            <h3 class="leading-none font-semibold text-2xl">Starter</h3>
+            <div class="mt-4">
+              <span class="text-4xl font-bold">$29</span>
+              <span class="text-gray-600 ml-2">/ per month</span>
+            </div>
           </div>
-          <ul class="space-y-3 mb-6">
+          <div class="px-6">
+            <ul class="space-y-3 mb-6">
         <li class="flex items-start gap-2">
           <svg class="w-5 h-5 shrink-0 mt-0.5" style="color: #6366F1; fill: currentColor;" viewBox="0 0 256 256">
             <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
@@ -357,16 +366,20 @@
           <span class="text-sm">Feature 3</span>
         </li>
       </ul>
-          <button class="w-full py-3 rounded-lg font-semibold" style="background-color: transparent; color: #8B5CF6; border: 2px solid #8B5CF6;">Get Started</button>
+            <button class="w-full h-12 rounded-lg font-semibold border-2" style="background-color: transparent; color: #8B5CF6; border-color: #8B5CF6;">Get Started</button>
+          </div>
         </div>
       
-        <div class="card bg-white p-6 rounded-lg shadow-lg border-2 ring-2 scale-105" style="border-color: #6366F1;">
-          <h3 class="text-2xl font-bold mb-4">Professional</h3>
-          <div class="mb-4">
-            <span class="text-4xl font-bold">$79</span>
-            <span class="text-gray-600">/ per month</span>
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 shadow-sm h-full ring-2 shadow-2xl scale-105" style="border-color: #6366F1; --tw-ring-color: #6366F1;">
+          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+            <h3 class="leading-none font-semibold text-2xl">Professional</h3>
+            <div class="mt-4">
+              <span class="text-4xl font-bold">$79</span>
+              <span class="text-gray-600 ml-2">/ per month</span>
+            </div>
           </div>
-          <ul class="space-y-3 mb-6">
+          <div class="px-6">
+            <ul class="space-y-3 mb-6">
         <li class="flex items-start gap-2">
           <svg class="w-5 h-5 shrink-0 mt-0.5" style="color: #6366F1; fill: currentColor;" viewBox="0 0 256 256">
             <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
@@ -395,16 +408,20 @@
           <span class="text-sm">Feature 6</span>
         </li>
       </ul>
-          <button class="w-full py-3 rounded-lg font-semibold" style="background-color: #8B5CF6; color: white; border: 2px solid #8B5CF6;">Get Started</button>
+            <button class="w-full h-12 rounded-lg font-semibold " style="background-color: #8B5CF6; color: white; ">Get Started</button>
+          </div>
         </div>
       
-        <div class="card bg-white p-6 rounded-lg shadow-lg border-2 " style="">
-          <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
-          <div class="mb-4">
-            <span class="text-4xl font-bold">Custom</span>
-            <span class="text-gray-600">/ contact us</span>
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 shadow-sm h-full border-gray-200" style="">
+          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+            <h3 class="leading-none font-semibold text-2xl">Enterprise</h3>
+            <div class="mt-4">
+              <span class="text-4xl font-bold">Custom</span>
+              <span class="text-gray-600 ml-2">/ contact us</span>
+            </div>
           </div>
-          <ul class="space-y-3 mb-6">
+          <div class="px-6">
+            <ul class="space-y-3 mb-6">
         <li class="flex items-start gap-2">
           <svg class="w-5 h-5 shrink-0 mt-0.5" style="color: #6366F1; fill: currentColor;" viewBox="0 0 256 256">
             <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
@@ -433,7 +450,8 @@
           <span class="text-sm">Dedicated support</span>
         </li>
       </ul>
-          <button class="w-full py-3 rounded-lg font-semibold" style="background-color: transparent; color: #8B5CF6; border: 2px solid #8B5CF6;">Contact Us</button>
+            <button class="w-full h-12 rounded-lg font-semibold border-2" style="background-color: transparent; color: #8B5CF6; border-color: #8B5CF6;">Contact Us</button>
+          </div>
         </div>
       </div>
       </div>
@@ -476,18 +494,22 @@
           <p class="text-lg md:text-xl opacity-80">The people behind our success</p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-      <div class="card text-center bg-white p-6 rounded-lg shadow-lg border-2">
-        
-        <h3 class="text-xl font-semibold mb-1">John Doe</h3>
-        <p class="text-sm opacity-70 mb-3">CEO &amp; Founder</p>
-        <p class="text-sm opacity-80">Passionate about innovation</p>
+      <div class="text-center bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm h-full">
+        <div class="px-6 pt-8">
+          
+          <h3 class="text-xl font-semibold mb-1">John Doe</h3>
+          <p class="text-sm opacity-70 mb-3">CEO &amp; Founder</p>
+          <p class="text-sm opacity-80">Passionate about innovation</p>
+        </div>
       </div>
     
-      <div class="card text-center bg-white p-6 rounded-lg shadow-lg border-2">
-        
-        <h3 class="text-xl font-semibold mb-1">Mike Johnson</h3>
-        <p class="text-sm opacity-70 mb-3">Lead Developer</p>
-        <p class="text-sm opacity-80">Building the future</p>
+      <div class="text-center bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm h-full">
+        <div class="px-6 pt-8">
+          
+          <h3 class="text-xl font-semibold mb-1">Mike Johnson</h3>
+          <p class="text-sm opacity-70 mb-3">Lead Developer</p>
+          <p class="text-sm opacity-80">Building the future</p>
+        </div>
       </div>
     </div>
       </div>
@@ -501,16 +523,20 @@
           <h2 class="text-3xl md:text-5xl font-bold mb-4">Our Journey</h2>
           <p class="text-lg md:text-xl opacity-80">How we got here</p>
         </div>
-        <div class="space-y-8 relative" style="padding-left: 2rem;">
+        <div class="space-y-8 relative">
           <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-300"></div>
           
       <div class="relative pl-20">
         <div class="absolute left-0 top-2 w-16 h-16 rounded-full flex items-center justify-center font-bold text-sm" style="background-color: #6366F1; color: white;">
           2020
         </div>
-        <div class="card bg-white p-6 rounded-lg shadow-lg border-2">
-          <h3 class="text-xl font-semibold mb-2">Founded</h3>
-          <p class="opacity-80">Started with a vision to change the industry</p>
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm">
+          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+            <h3 class="leading-none font-semibold text-xl">Founded</h3>
+          </div>
+          <div class="px-6">
+            <p class="opacity-80">Started with a vision to change the industry</p>
+          </div>
         </div>
       </div>
     
@@ -518,9 +544,13 @@
         <div class="absolute left-0 top-2 w-16 h-16 rounded-full flex items-center justify-center font-bold text-sm" style="background-color: #6366F1; color: white;">
           2021
         </div>
-        <div class="card bg-white p-6 rounded-lg shadow-lg border-2">
-          <h3 class="text-xl font-semibold mb-2">First Product</h3>
-          <p class="opacity-80">Launched our flagship product to great success</p>
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm">
+          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+            <h3 class="leading-none font-semibold text-xl">First Product</h3>
+          </div>
+          <div class="px-6">
+            <p class="opacity-80">Launched our flagship product to great success</p>
+          </div>
         </div>
       </div>
     
@@ -528,9 +558,13 @@
         <div class="absolute left-0 top-2 w-16 h-16 rounded-full flex items-center justify-center font-bold text-sm" style="background-color: #6366F1; color: white;">
           2022
         </div>
-        <div class="card bg-white p-6 rounded-lg shadow-lg border-2">
-          <h3 class="text-xl font-semibold mb-2">Major Growth</h3>
-          <p class="opacity-80">Expanded to 10,000+ customers worldwide</p>
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm">
+          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+            <h3 class="leading-none font-semibold text-xl">Major Growth</h3>
+          </div>
+          <div class="px-6">
+            <p class="opacity-80">Expanded to 10,000+ customers worldwide</p>
+          </div>
         </div>
       </div>
     
@@ -538,9 +572,13 @@
         <div class="absolute left-0 top-2 w-16 h-16 rounded-full flex items-center justify-center font-bold text-sm" style="background-color: #6366F1; color: white;">
           2023
         </div>
-        <div class="card bg-white p-6 rounded-lg shadow-lg border-2">
-          <h3 class="text-xl font-semibold mb-2">Innovation Award</h3>
-          <p class="opacity-80">Recognized as industry leader</p>
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm">
+          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+            <h3 class="leading-none font-semibold text-xl">Innovation Award</h3>
+          </div>
+          <div class="px-6">
+            <p class="opacity-80">Recognized as industry leader</p>
+          </div>
         </div>
       </div>
     
@@ -557,13 +595,16 @@
           <p class="text-lg md:text-xl opacity-80">Choose the plan that works for you</p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-        <div class="card bg-white p-6 rounded-lg shadow-lg border-2 " style="">
-          <h3 class="text-2xl font-bold mb-4">Starter</h3>
-          <div class="mb-4">
-            <span class="text-4xl font-bold">$29</span>
-            <span class="text-gray-600">/ per month</span>
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 shadow-sm h-full border-gray-200" style="">
+          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+            <h3 class="leading-none font-semibold text-2xl">Starter</h3>
+            <div class="mt-4">
+              <span class="text-4xl font-bold">$29</span>
+              <span class="text-gray-600 ml-2">/ per month</span>
+            </div>
           </div>
-          <ul class="space-y-3 mb-6">
+          <div class="px-6">
+            <ul class="space-y-3 mb-6">
         <li class="flex items-start gap-2">
           <svg class="w-5 h-5 shrink-0 mt-0.5" style="color: #6366F1; fill: currentColor;" viewBox="0 0 256 256">
             <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
@@ -585,16 +626,20 @@
           <span class="text-sm">Feature 3</span>
         </li>
       </ul>
-          <button class="w-full py-3 rounded-lg font-semibold" style="background-color: transparent; color: #8B5CF6; border: 2px solid #8B5CF6;">Get Started</button>
+            <button class="w-full h-12 rounded-lg font-semibold border-2" style="background-color: transparent; color: #8B5CF6; border-color: #8B5CF6;">Get Started</button>
+          </div>
         </div>
       
-        <div class="card bg-white p-6 rounded-lg shadow-lg border-2 ring-2 scale-105" style="border-color: #6366F1;">
-          <h3 class="text-2xl font-bold mb-4">Professional</h3>
-          <div class="mb-4">
-            <span class="text-4xl font-bold">$79</span>
-            <span class="text-gray-600">/ per month</span>
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 shadow-sm h-full ring-2 shadow-2xl scale-105" style="border-color: #6366F1; --tw-ring-color: #6366F1;">
+          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+            <h3 class="leading-none font-semibold text-2xl">Professional</h3>
+            <div class="mt-4">
+              <span class="text-4xl font-bold">$79</span>
+              <span class="text-gray-600 ml-2">/ per month</span>
+            </div>
           </div>
-          <ul class="space-y-3 mb-6">
+          <div class="px-6">
+            <ul class="space-y-3 mb-6">
         <li class="flex items-start gap-2">
           <svg class="w-5 h-5 shrink-0 mt-0.5" style="color: #6366F1; fill: currentColor;" viewBox="0 0 256 256">
             <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
@@ -623,16 +668,20 @@
           <span class="text-sm">Feature 6</span>
         </li>
       </ul>
-          <button class="w-full py-3 rounded-lg font-semibold" style="background-color: #8B5CF6; color: white; border: 2px solid #8B5CF6;">Get Started</button>
+            <button class="w-full h-12 rounded-lg font-semibold " style="background-color: #8B5CF6; color: white; ">Get Started</button>
+          </div>
         </div>
       
-        <div class="card bg-white p-6 rounded-lg shadow-lg border-2 " style="">
-          <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
-          <div class="mb-4">
-            <span class="text-4xl font-bold">Custom</span>
-            <span class="text-gray-600">/ contact us</span>
+        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 shadow-sm h-full border-gray-200" style="">
+          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
+            <h3 class="leading-none font-semibold text-2xl">Enterprise</h3>
+            <div class="mt-4">
+              <span class="text-4xl font-bold">Custom</span>
+              <span class="text-gray-600 ml-2">/ contact us</span>
+            </div>
           </div>
-          <ul class="space-y-3 mb-6">
+          <div class="px-6">
+            <ul class="space-y-3 mb-6">
         <li class="flex items-start gap-2">
           <svg class="w-5 h-5 shrink-0 mt-0.5" style="color: #6366F1; fill: currentColor;" viewBox="0 0 256 256">
             <path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path>
@@ -661,7 +710,8 @@
           <span class="text-sm">Dedicated support</span>
         </li>
       </ul>
-          <button class="w-full py-3 rounded-lg font-semibold" style="background-color: transparent; color: #8B5CF6; border: 2px solid #8B5CF6;">Contact Us</button>
+            <button class="w-full h-12 rounded-lg font-semibold border-2" style="background-color: transparent; color: #8B5CF6; border-color: #8B5CF6;">Contact Us</button>
+          </div>
         </div>
       </div>
       </div>
