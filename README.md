@@ -8,17 +8,23 @@ This landing page was built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Development
 
+Install dependencies:
 ```bash
-# Install dependencies
 npm install
+```
 
-# Start development server
+Start development server:
+```bash
 npm run dev
+```
 
-# Build for production
+Build for production:
+```bash
 npm run build
+```
 
-# Preview production build
+Preview production build:
+```bash
 npm run preview
 ```
 
