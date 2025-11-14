@@ -23,6 +23,30 @@
       overflow-x: hidden;
     }
 
+    .card {
+      background: white;
+      color: #1a1a1a;
+      border-radius: 0.75rem;
+      border: 2px solid #e5e5e5;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .highlighted-card {
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      transform: scale(1.05);
+      position: relative;
+    }
+
+    .highlighted-card:hover {
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+    }
+
     @keyframes fadeInUp {
       from {
         opacity: 0;
@@ -51,11 +75,28 @@
 
     button:hover, .btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
     }
 
     button:active, .btn:active {
       transform: translateY(0);
+    }
+
+    .btn-primary {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-outline {
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .btn-outline:hover {
+      background: rgba(0, 0, 0, 0.05);
     }
 
     input, textarea {
@@ -66,7 +107,7 @@
     input:focus, textarea:focus {
       outline: none;
       border-color: #171717;
-      box-shadow: 0 0 0 2px #171717;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
     }
 
     img {
@@ -133,6 +174,10 @@
       .md\:grid-cols-2 {
         grid-template-columns: repeat(1, minmax(0, 1fr));
       }
+
+      .highlighted-card {
+        transform: scale(1);
+      }
     }
   </style>
   <script>
@@ -157,12 +202,12 @@
     <div class="container mx-auto px-6 relative z-10">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-5xl font-bold mb-4">אפרת חיים שלי 6</h2>
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">אפרת חיים שלי 7</h2>
           <p class="text-lg md:text-xl opacity-80">Powerful features designed to help you work smarter, not harder</p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-      <div class="text-center bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm h-full">
-        <div class="px-6 pt-8 pb-6">
+      <div class="card h-full">
+        <div class="px-6 pt-8 pb-6 text-center">
           <div class="mb-4 flex justify-center">
             <div class="rounded-full p-4" style="background-color: #6366F120;">
               <svg class="w-8 h-8" style="color: #6366F1;" fill="currentColor" viewBox="0 0 256 256">
@@ -175,8 +220,8 @@
         </div>
       </div>
     
-      <div class="text-center bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm h-full">
-        <div class="px-6 pt-8 pb-6">
+      <div class="card h-full">
+        <div class="px-6 pt-8 pb-6 text-center">
           <div class="mb-4 flex justify-center">
             <div class="rounded-full p-4" style="background-color: #6366F120;">
               <svg class="w-8 h-8" style="color: #6366F1;" fill="currentColor" viewBox="0 0 256 256">
@@ -189,8 +234,8 @@
         </div>
       </div>
     
-      <div class="text-center bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm h-full">
-        <div class="px-6 pt-8 pb-6">
+      <div class="card h-full">
+        <div class="px-6 pt-8 pb-6 text-center">
           <div class="mb-4 flex justify-center">
             <div class="rounded-full p-4" style="background-color: #6366F120;">
               <svg class="w-8 h-8" style="color: #6366F1;" fill="currentColor" viewBox="0 0 256 256">
@@ -212,7 +257,7 @@
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl md:text-5xl font-bold text-center mb-12">Loved by Thousands</h2>
         <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm">
+        <div class="card">
           <div class="px-6 pt-6">
             <div class="flex gap-1 mb-4">
         <svg class="w-5 h-5" style="color: #8B5CF6; fill: currentColor;" viewBox="0 0 256 256">
@@ -243,7 +288,7 @@
           </div>
         </div>
       
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm">
+        <div class="card">
           <div class="px-6 pt-6">
             <div class="flex gap-1 mb-4">
         <svg class="w-5 h-5" style="color: #8B5CF6; fill: currentColor;" viewBox="0 0 256 256">
@@ -295,7 +340,7 @@
           <h2 class="text-3xl md:text-5xl font-bold mb-4">Start Your Journey</h2>
           <p class="text-lg opacity-80">Fill out the form below and we&#039;ll get you started right away</p>
         </div>
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-2xl py-6">
+        <div class="card shadow-2xl py-6">
           <div class="px-6 pt-2 pb-2">
             <form id="lead-form" class="space-y-6">
               
@@ -335,15 +380,13 @@
           <p class="text-lg md:text-xl opacity-80">Choose the plan that works for you</p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 shadow-sm h-full border-gray-200" style="">
-          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-            <h3 class="leading-none font-semibold text-2xl">Starter</h3>
-            <div class="mt-4">
+        <div class="card h-full " style="">
+          <div class="px-6 py-6">
+            <h3 class="leading-none font-semibold text-2xl mb-2">Starter</h3>
+            <div class="mt-4 mb-6">
               <span class="text-4xl font-bold">$29</span>
               <span class="text-gray-600 ml-2">/ per month</span>
             </div>
-          </div>
-          <div class="px-6">
             <ul class="space-y-3 mb-6">
         <li class="flex items-start gap-2">
           <svg class="w-5 h-5 shrink-0 mt-0.5" style="color: #6366F1; fill: currentColor;" viewBox="0 0 256 256">
@@ -366,19 +409,17 @@
           <span class="text-sm">Feature 3</span>
         </li>
       </ul>
-            <button class="w-full h-12 rounded-lg font-semibold border-2" style="background-color: transparent; color: #8B5CF6; border-color: #8B5CF6;">Get Started</button>
+            <button class="w-full h-12 rounded-lg font-semibold btn-outline" style="border: 2px solid #8B5CF6; color: #8B5CF6;">Get Started</button>
           </div>
         </div>
       
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 shadow-sm h-full ring-2 shadow-2xl scale-105" style="border-color: #6366F1; --tw-ring-color: #6366F1;">
-          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-            <h3 class="leading-none font-semibold text-2xl">Professional</h3>
-            <div class="mt-4">
+        <div class="card h-full highlighted-card" style="border-color: #6366F1;">
+          <div class="px-6 py-6">
+            <h3 class="leading-none font-semibold text-2xl mb-2">Professional</h3>
+            <div class="mt-4 mb-6">
               <span class="text-4xl font-bold">$79</span>
               <span class="text-gray-600 ml-2">/ per month</span>
             </div>
-          </div>
-          <div class="px-6">
             <ul class="space-y-3 mb-6">
         <li class="flex items-start gap-2">
           <svg class="w-5 h-5 shrink-0 mt-0.5" style="color: #6366F1; fill: currentColor;" viewBox="0 0 256 256">
@@ -408,19 +449,17 @@
           <span class="text-sm">Feature 6</span>
         </li>
       </ul>
-            <button class="w-full h-12 rounded-lg font-semibold " style="background-color: #8B5CF6; color: white; ">Get Started</button>
+            <button class="w-full h-12 rounded-lg font-semibold btn-primary" style="background-color: #8B5CF6; color: white;">Get Started</button>
           </div>
         </div>
       
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 shadow-sm h-full border-gray-200" style="">
-          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-            <h3 class="leading-none font-semibold text-2xl">Enterprise</h3>
-            <div class="mt-4">
+        <div class="card h-full " style="">
+          <div class="px-6 py-6">
+            <h3 class="leading-none font-semibold text-2xl mb-2">Enterprise</h3>
+            <div class="mt-4 mb-6">
               <span class="text-4xl font-bold">Custom</span>
               <span class="text-gray-600 ml-2">/ contact us</span>
             </div>
-          </div>
-          <div class="px-6">
             <ul class="space-y-3 mb-6">
         <li class="flex items-start gap-2">
           <svg class="w-5 h-5 shrink-0 mt-0.5" style="color: #6366F1; fill: currentColor;" viewBox="0 0 256 256">
@@ -450,7 +489,7 @@
           <span class="text-sm">Dedicated support</span>
         </li>
       </ul>
-            <button class="w-full h-12 rounded-lg font-semibold border-2" style="background-color: transparent; color: #8B5CF6; border-color: #8B5CF6;">Contact Us</button>
+            <button class="w-full h-12 rounded-lg font-semibold btn-outline" style="border: 2px solid #8B5CF6; color: #8B5CF6;">Contact Us</button>
           </div>
         </div>
       </div>
@@ -494,8 +533,8 @@
           <p class="text-lg md:text-xl opacity-80">The people behind our success</p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-      <div class="text-center bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm h-full">
-        <div class="px-6 pt-8">
+      <div class="card h-full">
+        <div class="px-6 pt-8 text-center">
           
           <h3 class="text-xl font-semibold mb-1">John Doe</h3>
           <p class="text-sm opacity-70 mb-3">CEO &amp; Founder</p>
@@ -503,8 +542,8 @@
         </div>
       </div>
     
-      <div class="text-center bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm h-full">
-        <div class="px-6 pt-8">
+      <div class="card h-full">
+        <div class="px-6 pt-8 text-center">
           
           <h3 class="text-xl font-semibold mb-1">Mike Johnson</h3>
           <p class="text-sm opacity-70 mb-3">Lead Developer</p>
@@ -530,11 +569,9 @@
         <div class="absolute left-0 top-2 w-16 h-16 rounded-full flex items-center justify-center font-bold text-sm" style="background-color: #6366F1; color: white;">
           2020
         </div>
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm">
-          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-            <h3 class="leading-none font-semibold text-xl">Founded</h3>
-          </div>
-          <div class="px-6">
+        <div class="card">
+          <div class="px-6 py-4">
+            <h3 class="leading-none font-semibold text-xl mb-3">Founded</h3>
             <p class="opacity-80">Started with a vision to change the industry</p>
           </div>
         </div>
@@ -544,11 +581,9 @@
         <div class="absolute left-0 top-2 w-16 h-16 rounded-full flex items-center justify-center font-bold text-sm" style="background-color: #6366F1; color: white;">
           2021
         </div>
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm">
-          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-            <h3 class="leading-none font-semibold text-xl">First Product</h3>
-          </div>
-          <div class="px-6">
+        <div class="card">
+          <div class="px-6 py-4">
+            <h3 class="leading-none font-semibold text-xl mb-3">First Product</h3>
             <p class="opacity-80">Launched our flagship product to great success</p>
           </div>
         </div>
@@ -558,11 +593,9 @@
         <div class="absolute left-0 top-2 w-16 h-16 rounded-full flex items-center justify-center font-bold text-sm" style="background-color: #6366F1; color: white;">
           2022
         </div>
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm">
-          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-            <h3 class="leading-none font-semibold text-xl">Major Growth</h3>
-          </div>
-          <div class="px-6">
+        <div class="card">
+          <div class="px-6 py-4">
+            <h3 class="leading-none font-semibold text-xl mb-3">Major Growth</h3>
             <p class="opacity-80">Expanded to 10,000+ customers worldwide</p>
           </div>
         </div>
@@ -572,11 +605,9 @@
         <div class="absolute left-0 top-2 w-16 h-16 rounded-full flex items-center justify-center font-bold text-sm" style="background-color: #6366F1; color: white;">
           2023
         </div>
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 border-gray-200 shadow-sm">
-          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-            <h3 class="leading-none font-semibold text-xl">Innovation Award</h3>
-          </div>
-          <div class="px-6">
+        <div class="card">
+          <div class="px-6 py-4">
+            <h3 class="leading-none font-semibold text-xl mb-3">Innovation Award</h3>
             <p class="opacity-80">Recognized as industry leader</p>
           </div>
         </div>
@@ -595,15 +626,13 @@
           <p class="text-lg md:text-xl opacity-80">Choose the plan that works for you</p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 shadow-sm h-full border-gray-200" style="">
-          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-            <h3 class="leading-none font-semibold text-2xl">Starter</h3>
-            <div class="mt-4">
+        <div class="card h-full " style="">
+          <div class="px-6 py-6">
+            <h3 class="leading-none font-semibold text-2xl mb-2">Starter</h3>
+            <div class="mt-4 mb-6">
               <span class="text-4xl font-bold">$29</span>
               <span class="text-gray-600 ml-2">/ per month</span>
             </div>
-          </div>
-          <div class="px-6">
             <ul class="space-y-3 mb-6">
         <li class="flex items-start gap-2">
           <svg class="w-5 h-5 shrink-0 mt-0.5" style="color: #6366F1; fill: currentColor;" viewBox="0 0 256 256">
@@ -626,19 +655,17 @@
           <span class="text-sm">Feature 3</span>
         </li>
       </ul>
-            <button class="w-full h-12 rounded-lg font-semibold border-2" style="background-color: transparent; color: #8B5CF6; border-color: #8B5CF6;">Get Started</button>
+            <button class="w-full h-12 rounded-lg font-semibold btn-outline" style="border: 2px solid #8B5CF6; color: #8B5CF6;">Get Started</button>
           </div>
         </div>
       
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 shadow-sm h-full ring-2 shadow-2xl scale-105" style="border-color: #6366F1; --tw-ring-color: #6366F1;">
-          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-            <h3 class="leading-none font-semibold text-2xl">Professional</h3>
-            <div class="mt-4">
+        <div class="card h-full highlighted-card" style="border-color: #6366F1;">
+          <div class="px-6 py-6">
+            <h3 class="leading-none font-semibold text-2xl mb-2">Professional</h3>
+            <div class="mt-4 mb-6">
               <span class="text-4xl font-bold">$79</span>
               <span class="text-gray-600 ml-2">/ per month</span>
             </div>
-          </div>
-          <div class="px-6">
             <ul class="space-y-3 mb-6">
         <li class="flex items-start gap-2">
           <svg class="w-5 h-5 shrink-0 mt-0.5" style="color: #6366F1; fill: currentColor;" viewBox="0 0 256 256">
@@ -668,19 +695,17 @@
           <span class="text-sm">Feature 6</span>
         </li>
       </ul>
-            <button class="w-full h-12 rounded-lg font-semibold " style="background-color: #8B5CF6; color: white; ">Get Started</button>
+            <button class="w-full h-12 rounded-lg font-semibold btn-primary" style="background-color: #8B5CF6; color: white;">Get Started</button>
           </div>
         </div>
       
-        <div class="bg-white text-gray-900 flex flex-col gap-6 rounded-xl border-2 shadow-sm h-full border-gray-200" style="">
-          <div class="px-6 grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5">
-            <h3 class="leading-none font-semibold text-2xl">Enterprise</h3>
-            <div class="mt-4">
+        <div class="card h-full " style="">
+          <div class="px-6 py-6">
+            <h3 class="leading-none font-semibold text-2xl mb-2">Enterprise</h3>
+            <div class="mt-4 mb-6">
               <span class="text-4xl font-bold">Custom</span>
               <span class="text-gray-600 ml-2">/ contact us</span>
             </div>
-          </div>
-          <div class="px-6">
             <ul class="space-y-3 mb-6">
         <li class="flex items-start gap-2">
           <svg class="w-5 h-5 shrink-0 mt-0.5" style="color: #6366F1; fill: currentColor;" viewBox="0 0 256 256">
@@ -710,7 +735,7 @@
           <span class="text-sm">Dedicated support</span>
         </li>
       </ul>
-            <button class="w-full h-12 rounded-lg font-semibold border-2" style="background-color: transparent; color: #8B5CF6; border-color: #8B5CF6;">Contact Us</button>
+            <button class="w-full h-12 rounded-lg font-semibold btn-outline" style="border: 2px solid #8B5CF6; color: #8B5CF6;">Contact Us</button>
           </div>
         </div>
       </div>
