@@ -22,7 +22,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             <motion.div 
-              key={0}
+              key="0"
               className="p-8 rounded-xl border-2 transition-all hover:shadow-xl"
               style={{ 
                 backgroundColor: '#ffffff',
@@ -42,7 +42,7 @@ function App() {
             </motion.div>
             
             <motion.div 
-              key={1}
+              key="1"
               className="p-8 rounded-xl border-2 transition-all hover:shadow-xl"
               style={{ 
                 backgroundColor: '#ffffff',
@@ -62,7 +62,7 @@ function App() {
             </motion.div>
             
             <motion.div 
-              key={2}
+              key="2"
               className="p-8 rounded-xl border-2 transition-all hover:shadow-xl"
               style={{ 
                 backgroundColor: '#ffffff',
@@ -205,3 +205,4 @@ function App() {
   )
 }
 
+export default App
