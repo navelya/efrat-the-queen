@@ -26,6 +26,36 @@
     section {
       padding: 4rem 2rem;
       position: relative;
+      overflow: hidden;
+    }
+    
+    .animate-on-scroll {
+      opacity: 0;
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .animate-on-scroll.fade {
+      opacity: 0;
+    }
+    
+    .animate-on-scroll.slide {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    
+    .animate-on-scroll.zoom {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    
+    .animate-on-scroll.parallax {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    
+    .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
     }
     
     .container {
@@ -479,7 +509,8 @@
 </head>
 <body>
   
-  <section id="section-0" style="background: #F9FAFB; color: #1F2937; padding: 6rem 2rem">
+  <section id="section-0" class="animate-on-scroll slide" style="background: #F9FAFB; color: #1F2937; padding: 6rem 2rem">
+    
     <div class="container">
       <h2 style="color: #1F2937">אפרת חיים שלי</h2>
       <p class="section-subtitle" style="color: #1F2937">Powerful features designed to help you work smarter, not harder</p>
@@ -504,7 +535,8 @@
     </div>
   </section>
 
-  <section id="section-1" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+  <section id="section-1" class="animate-on-scroll zoom" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+    
     <div class="container">
       <h2 style="color: #1F2937">Loved by Thousands</h2>
       <div class="grid">
@@ -527,7 +559,8 @@
     </div>
   </section>
 
-  <section id="section-2" class="cta-section" style="background: linear-gradient(to right, #1F2937, #374151); color: #FFFFFF; padding: 6rem 2rem">
+  <section id="section-2" class="cta-section animate-on-scroll fade" style="background: linear-gradient(to right, #1F2937, #374151); color: #FFFFFF; padding: 6rem 2rem">
+    
     <div class="container">
       <h2 style="color: #FFFFFF">Ready to Get Started?</h2>
       <p style="color: #FFFFFF">Join thousands of teams already using our platform</p>
@@ -535,7 +568,8 @@
     </div>
   </section>
 
-  <section id="section-3" style="background: #F9FAFB; color: #1F2937; padding: 8rem 2rem">
+  <section id="section-3" class="animate-on-scroll slide" style="background: #F9FAFB; color: #1F2937; padding: 8rem 2rem">
+    
     <div class="container">
       <h2 style="color: #1F2937">Start Your Journey</h2>
       <p class="section-subtitle" style="color: #1F2937">Fill out the form below and we'll get you started right away</p>
@@ -568,7 +602,8 @@
     </div>
   </section>
 
-  <section id="section-4" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+  <section id="section-4" class="animate-on-scroll fade" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+    
     <div class="container">
       <h2 style="color: #1F2937">Simple Pricing</h2>
       <p class="section-subtitle" style="color: #1F2937">Choose the plan that works for you</p>
@@ -608,7 +643,8 @@
     </div>
   </section>
 
-  <section id="section-5" style="background: #FFFFFF; color: #1F2937; padding: 4rem 2rem">
+  <section id="section-5" class="animate-on-scroll none" style="background: #FFFFFF; color: #1F2937; padding: 4rem 2rem">
+    
     <div class="container">
       <h2 style="color: #1F2937">Trusted By Industry Leaders</h2>
       <p class="section-subtitle" style="color: #1F2937">Join thousands of companies using our platform</p>
@@ -634,7 +670,8 @@
     </div>
   </section>
 
-  <section id="section-6" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+  <section id="section-6" class="animate-on-scroll slide" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+    
     <div class="container">
       <h2 style="color: #1F2937">Meet The Team</h2>
       <p class="section-subtitle" style="color: #1F2937">The people behind our success</p>
@@ -658,7 +695,8 @@
     </div>
   </section>
 
-  <section id="section-7" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+  <section id="section-7" class="animate-on-scroll slide" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+    
     <div class="container">
       <h2 style="color: #1F2937">Our Journey</h2>
       <p class="section-subtitle" style="color: #1F2937">How we got here</p>
@@ -692,7 +730,8 @@
     </div>
   </section>
 
-  <section id="section-8" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+  <section id="section-8" class="animate-on-scroll fade" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+    
     <div class="container">
       <h2 style="color: #1F2937">Simple Pricing</h2>
       <p class="section-subtitle" style="color: #1F2937">Choose the plan that works for you</p>
@@ -732,7 +771,8 @@
     </div>
   </section>
 
-  <section id="section-9" class="hero-section" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+  <section id="section-9" class="hero-section animate-on-scroll fade" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+    
     <div class="container">
       
       <h1 style="color: #1F2937">Your Powerful Headline</h1>
@@ -742,7 +782,8 @@
     </div>
   </section>
 
-  <section id="section-10" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+  <section id="section-10" class="animate-on-scroll none" style="background: #FFFFFF; color: #1F2937; padding: 6rem 2rem">
+    
     <div class="container">
       <h2 style="color: #1F2937">Section Title</h2>
       <p class="section-subtitle" style="color: #1F2937">Optional subtitle</p>
@@ -751,6 +792,26 @@
   </section>
 
   <script>
+    // Scroll animation observer
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+    
+    // Observe all animated sections
+    document.querySelectorAll('.animate-on-scroll').forEach(section => {
+      observer.observe(section);
+    });
+    
+    // Form submission handler
     const form = document.getElementById('contact-form');
     if (form) {
       form.addEventListener('submit', function(e) {
@@ -759,6 +820,26 @@
         this.reset();
       });
     }
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && href !== '#form') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        } else if (href === '#form') {
+          e.preventDefault();
+          const formSection = document.querySelector('#contact-form');
+          if (formSection) {
+            formSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
   </script>
 </body>
 </html>
